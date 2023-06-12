@@ -2,7 +2,9 @@
 
 *[Turborepo](https://turbo.build/repo)-compatible Remote Cache built on the Supercloud*
 
-**A Cloudflare Community Project**
+**A [Cloudflare Community](https://github.com/Cloudflare-Community) Project**
+
+**NOTE: This Github Repository, and the Organization it belongs to, is not managed or maintained by Cloudflare, or its employees. This project and/or this Organization are not condoned/recommended by Cloudflare. Views expressed here do not represent the views of Cloudflare or its employees. All rights to the Cloudflare Logo and other assets belong to Cloudflare Inc.**
 
 Corsica is a remote cache for Turborepo that uses Cloudflare [Workers](https://developers.cloudflare.com/workers) and [R2](https://developers.cloudflare.com/r2) to store build artifacts. It automatically caches, and subsequently invalidates, build artifacts for your Turborepo projects. It also collects analytics on the build artifacts that are cached, using [Analytics Engine](https://developers.cloudflare.com/analytics/analytics-engine/).
 

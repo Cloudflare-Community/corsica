@@ -1,0 +1,36 @@
+{
+  "name": "turbo",
+  "account_id": "864cdf76f8254fb5539425299984d766",
+  "compatibility_date": "2023-06-11",
+  "main": "src/index.ts",
+  "workers_dev": false,
+  "minify": true,
+  "route": {
+    "pattern": "turbo.goalastair.com",
+    "custom_domain": true 
+  },
+  "define": {
+    "globalThis.MINIFLARE": "false"
+  },
+  "analytics_engine_datasets": [{
+    "binding": "AE",
+    "dataset": "TurborepoAnalytics"
+  }],
+  "durable_objects": {
+    "bindings": [{
+      "name": "EXPIRE",
+      "class_name": "Expire" 
+    }]
+  },
+  "r2_buckets": [{
+    "binding": "R2",
+    "bucket_name": "turbo",
+    "preview_bucket_name": "turbo" 
+  }],
+  "migrations": [{
+    "tag": "2023-06-11",
+    "new_classes": [
+      "Expire"
+    ]
+  }]
+}

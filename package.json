@@ -1,0 +1,13 @@
+{
+	"scripts": {
+		"dev": "wrangler dev -j --define globalThis.MINIFLARE:true",
+		"deploy": "wrangler deploy -j"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20230518.0",
+		"wrangler": "^3.1.0"
+	},
+	"dependencies": {
+		"hono": "^3.2.5"
+	}
+}

@@ -59,10 +59,11 @@ Current Deployment ID: f6bfbc67-3ba0-4c6d-ac53-835b6a6af8ad
 
 ### In your repository
 
-1. Create a `.turbo/config.json` file in the root of your repository.
+1. Create a `.turbo/config.json` file in the root of your repository. At the moment, it appears that `turbo` [requires a `teamid` to be defined for it to enable remote caching](https://github.com/vercel/turbo/blob/8f3ec2c79713273da54469cfdfcfcea66cb9d206/cli/internal/client/client.go#L81-L83). While `corsica` doesn't currently silo caches by team, you'll need to define a `teamid` in your config file. It can be anything you want, as long as it's a string.
 ```json
 {
   "apiurl": "<Your Worker Domain>",
+  "teamid": "<Your Team ID>
 }
 ```
 2. Add an environment variable to your shell called `TURBO_TOKEN`, with the value of your API token.

@@ -1,0 +1,14 @@
+{
+	"get": {
+		"access-control-allow-methods": "GET",
+		"access-control-allow-headers": "authorization, user-agent"
+	},
+	"head": {
+		"access-control-allow-methods": "HEAD",
+		"access-control-allow-headers": "authorization, user-agent"
+	},
+	"put": {
+		"access-control-allow-methods": "PUT, OPTIONS",
+		"access-control-allow-headers": "authorization, content-type, user-agent, x-artifact-duration, x-artifact-tag"
+	}
+}

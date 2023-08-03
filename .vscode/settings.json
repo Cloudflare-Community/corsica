@@ -1,5 +1,15 @@
 {
   "files.associations": {
     "*.dev.vars": "env"
-  }
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+		"package.json": "pnpm-lock.yaml, .npmrc, pnpm-workspace.yaml",
+		".eslintrc": ".eslintignore",
+		".prettierrc": ".prettierignore",
+  },
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": false,
+	"files.eol": "\n"
 }

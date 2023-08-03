@@ -4,15 +4,11 @@
     "module": "esnext",
     "moduleResolution": "node",
     "lib": ["esnext"],
-    "types": ["@cloudflare/workers-types"],
+		"types": ["@cloudflare/workers-types"],
     "isolatedModules": true,
     "noEmit": true,
     "strict": true,
     "esModuleInterop": true,
     "resolveJsonModule": true
-  },
-  "include": [
-    "src",
-    "types"
-  ]
+  }
 }

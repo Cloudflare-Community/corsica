@@ -1,0 +1,14 @@
+{
+	"name": "@corsica/types",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"main": "src/index.ts",
+	"scripts": {
+		"format": "prettier --write .",
+		"lint": "eslint \"**/*.ts*\""
+	},
+	"devDependencies": {
+		"hono": "^3.3.4"
+	}
+}

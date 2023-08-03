@@ -1,13 +1,22 @@
 {
+	"private": true,
 	"scripts": {
-		"dev": "wrangler dev -j --define globalThis.MINIFLARE:true",
-		"deploy": "wrangler deploy -j"
-	},
-	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20230518.0",
-		"wrangler": "^3.1.0"
+		"format": "turbo format",
+		"lint": "turbo lint"
 	},
 	"dependencies": {
-		"hono": "^3.2.5"
+		"turbo": "^1.10.12",
+		"typescript": "^5.1.6",
+		"wrangler": "^3.4.0"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20230801.0",
+		"@typescript-eslint/eslint-plugin": "^6.2.1",
+		"@typescript-eslint/parser": "^6.2.1",
+		"eslint": "^8.46.0",
+		"eslint-config-turbo": "^1.10.12",
+		"eslint-plugin-import": "^2.28.0",
+		"eslint-plugin-unused-imports": "^3.0.0",
+		"prettier": "^3.0.1"
 	}
 }

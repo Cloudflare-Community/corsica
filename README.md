@@ -29,7 +29,7 @@ Corsica is a remote cache for Turborepo that uses Cloudflare [Workers](https://d
 }
 ```
 
-3. Move to the [`apps/simple`](apps/simple)
+3. Move to [`apps/simple`](apps/simple)
 4. Replace the `account_id` and `route` fields in your `wrangler.json` file with your Cloudflare account ID and the route you want to use for your cache.
 5. Deploy the API token json as an environment variable called `API_TOKENS` in your Cloudflare Worker.
 

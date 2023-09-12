@@ -1,15 +1,19 @@
 {
-  "files.associations": {
-    "*.dev.vars": "env"
-  },
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.patterns": {
-		"package.json": "pnpm-lock.yaml, .npmrc, pnpm-workspace.yaml",
-		".eslintrc": ".eslintignore",
-		".prettierrc": ".prettierignore",
-  },
-  "editor.tabSize": 2,
-  "editor.detectIndentation": false,
-  "editor.insertSpaces": false,
-	"files.eol": "\n"
+	"files.associations": {
+		"*.dev.vars": "properties"
+	},
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"package.json": "pnpm-lock.yaml, .npmrc, pnpm-workspace.yaml, .eslint*, .prettier*, tsconfig.json, turbo.json",
+		"svelte.config.js": "vite.config.ts, postcss.config.ts, tailwind.config.ts"
+	},
+	"editor.tabSize": 2,
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"files.eol": "\n",
+	"files.exclude": {
+		".gitignore": true,
+		"LICENSE": true
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode"
 }

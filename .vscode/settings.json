@@ -5,7 +5,7 @@
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.patterns": {
 		"package.json": "pnpm-lock.yaml, .npmrc, pnpm-workspace.yaml, .eslint*, .prettier*, tsconfig.json, turbo.json",
-		"svelte.config.js": "vite.config.ts, postcss.config.ts, tailwind.config.ts"
+		"svelte.config.js": "vite.config.ts, postcss.config.cjs, tailwind.config.ts"
 	},
 	"editor.tabSize": 2,
 	"editor.detectIndentation": false,
